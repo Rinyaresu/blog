@@ -1,8 +1,10 @@
 ---
-title: How to create a rails app with docker
+title: How to make a CI workflow with GitHub Actions
 pubDate: 2022-12-08
 tags:
-  - docker
+  - github
+  - ci
+  - rails
 ---
 
 |> This repository use [Ruby on Rails](https://rubyonrails.org/)
@@ -54,3 +56,10 @@ jobs:
       - name: Run tests
         run: bundle exec rspec
 ```
+
+---
+
+## References
+
+- [rubyonrails.yml](https://github.com/Rinyaresu/teste-umanni/blob/main/.github/workflows/rubyonrails.yml)
+- [Understanding GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions#create-an-example-workflow)
