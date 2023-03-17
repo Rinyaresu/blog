@@ -10,7 +10,7 @@ tags:
 
 Create a directory and define a `Dockerfile`. To begin with, the `Dockerfile` consists of:
 
-```Dockerfile
+```docker
 # syntax=docker/dockerfile:1
 FROM ruby:3.1.2
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
@@ -30,7 +30,7 @@ source 'https://rubygems.org'
 gem 'rails'
 ```
 
-Create an empty `Gemfile.lock` file to build our [Dockerfile].
+Create an empty `Gemfile.lock` file to build our Dockerfile.
 
 ```bash
 touch Gemfile.lock
