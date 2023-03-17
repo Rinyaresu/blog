@@ -32,7 +32,7 @@ gem 'rails'
 
 Create an empty `Gemfile.lock` file to build our Dockerfile.
 
-```bash
+```fish
 touch Gemfile.lock
 ```
 
@@ -61,7 +61,7 @@ services:
 
 With those files in place, you can now generate the [Rails](https://rubyonrails.org/) skeleton app using [docker compose run](https://docs.docker.com/engine/reference/commandline/compose_run/):
 
-```bash
+```fish
 docker compose run --no-deps web rails new . --force --database=postgresql
 ```
 
@@ -69,13 +69,13 @@ docker compose run --no-deps web rails new . --force --database=postgresql
 
 If you are running Docker on Linux, the files `rails new` created are owned by root. This happens because the Container runs as the root user. If this is the case, change the ownership of the new files.
 
-```bash
+```fish
 sudo chown -R $USER:$USER .
 ```
 
 Now that you’ve got a new `Gemfile`, you need to build the image again.
 
-```bash
+```fish
 docker compose build
 ```
 
@@ -105,19 +105,19 @@ test:
 
 You can now boot the app with [docker compose up](https://docs.docker.com/engine/reference/commandline/compose_up/). If all is well, you should see some PostgreSQL output:
 
-```bash
+```fish
 docker compose up
 ```
 
 Finally, you need to create the database. In another terminal, run:
 
-```zsh
+```fish
 docker compose run web rake db:create
 ```
 
 ## Stop the application
 
-```bash
+```fish
 docker compose down
 ```
 
