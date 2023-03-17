@@ -1,7 +1,7 @@
 export const SITE = {
   title: "Rinyaresu's garden",
-  website: "https://rinyaresu.dev",
-  description: "A place where I put all my thoughts",
+  website: "https://rinyaresu.me",
+  description: "A place where I put all my stuff",
   author: "Kaique Linhares <aka Rinyaresu>",
 };
 

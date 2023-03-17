@@ -6,8 +6,14 @@ import vercel from "@astrojs/vercel/static";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://rinyaresu.dev",
+  site: "https://rinyaresu.me",
   integrations: [mdx(), sitemap()],
   output: "static",
   adapter: vercel(),
+
+  markdown: {
+    shikiConfig: {
+      theme: "github-dark",
+    },
+  },
 });
