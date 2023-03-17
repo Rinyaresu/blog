@@ -61,9 +61,7 @@ li {
 }
 
 pre {
-  font-size: var(--font-size-sm);
-  line-height: 1.25;
+  line-height: 1.5;
   text-align: justify;
-  letter-spacing: 0.8px;
   padding: var(--spacing-2x);
 }
