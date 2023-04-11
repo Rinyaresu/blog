@@ -19,7 +19,7 @@
     "sanitize-html": "^2.9.0"
   },
   "devDependencies": {
-    "@astrojs/sitemap": "^1.0.1",
+    "@astrojs/sitemap": "^1.2.2",
     "@types/markdown-it": "^12.2.3",
     "@types/sanitize-html": "^2.8.0"
   }
